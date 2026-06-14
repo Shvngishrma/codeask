@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CodeAsk — Repository intelligence tool</title>
+    <style>
+      :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc;color-scheme:dark}
+      html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+      body{background:linear-gradient(180deg,#071022 0%,#071833 100%);display:flex;align-items:center;justify-content:center;padding:24px;color:#e6eef6}
+      .card{max-width:780px;width:100%;background:rgba(255,255,255,0.02);border-radius:12px;padding:28px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+      h1{margin:0 0 8px;font-size:28px}
+      p.lead{margin:0 0 18px;color:var(--muted)}
+      .links{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+      a.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:rgba(125,211,252,0.12);color:var(--accent);text-decoration:none;font-weight:600}
+      footer{margin-top:22px;color:var(--muted);font-size:13px}
+      code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px}
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>CodeAsk</h1>
+      <p class="lead">Repository intelligence tool — ask questions about a codebase and get file:line evidence.</p>
+
+      <p>Current MVP is CLI based. This page is a minimal landing page for the hackathon submission.</p>
+
+      <div class="links">
+        <a class="btn" href="link" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="link" target="_blank" rel="noopener">Demo video</a>
+      </div>
+
+      <footer>
+        Quickstart: clone the repo and run <code>codeask init</code> to index a repository, then ask a question with <code>codeask "how does auth work?"</code>.
+      </footer>
+    </main>
+  </body>
+</html>
