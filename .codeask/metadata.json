@@ -1,0 +1,8 @@
+{
+  "project_name": "codeask",
+  "indexed_at": "2026-06-13T21:11:00.930462+00:00",
+  "file_count": 26,
+  "chunk_count": 75,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "version": "0.1.0"
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+codeask = codeask.main:main

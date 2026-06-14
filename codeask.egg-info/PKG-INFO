@@ -1,0 +1,81 @@
+Metadata-Version: 2.4
+Name: codeask
+Version: 0.1.0
+Summary: Local CLI for understanding unfamiliar repositories
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typer==0.12.3
+Requires-Dist: rich==13.7.1
+Requires-Dist: pathspec==0.12.1
+Requires-Dist: sentence-transformers==3.0.1
+Requires-Dist: chromadb==0.5.3
+Requires-Dist: anthropic==0.28.0
+Requires-Dist: python-dotenv==1.0.1
+
+# CodeAsk
+
+Understand any codebase in minutes.
+
+CodeAsk is a local CLI for asking architectural questions about a repository and getting answers with file and line evidence.
+
+## Current Status
+
+This repository currently contains the production-quality scaffold for the project foundation.
+
+Implemented:
+
+- project layout
+- typed domain models
+- centralized configuration
+- shared constants
+- custom exceptions
+- CLI shell
+- metadata helpers
+- LLM provider abstraction
+
+Deferred until the next iteration:
+
+- repository walking
+- chunking
+- embeddings
+- retrieval
+- vector storage
+- LLM API calls
+
+## Install
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+```bash
+codeask init
+codeask "how does authentication work?"
+```
+
+## Project Structure
+
+```text
+codeask/
+├── codeask/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── constants.py
+│   ├── config.py
+│   ├── models.py
+│   ├── metadata.py
+│   ├── llm.py
+│   ├── walker.py
+│   ├── chunker.py
+│   ├── embedder.py
+│   ├── store.py
+│   ├── retriever.py
+│   ├── context_builder.py
+│   ├── display.py
+│   └── summarizer.py
+├── requirements.txt
+├── pyproject.toml
+└── README.md
+```
